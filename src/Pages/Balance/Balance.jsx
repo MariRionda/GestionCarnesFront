@@ -96,40 +96,40 @@ const dispatch = useDispatch()
                     <table className="table">
                         <tbody>
                             <tr>
-                                <td className="table-warning">Ganancia mensual</td>
-                                <td className="table-warning">{gananciaMensualEnPesos}</td>
+                                <td className="table-info">Ganancia mensual</td>
+                                <td className="table-info">{gananciaMensualEnPesos}</td>
                             </tr>
                             <tr>
                                 <td className="table-dark" colSpan="2">Stock</td>
                             </tr>
                             <tr>
-                                <td className="table-warning">Cantidad</td>
-                                <td className="table-warning">{kgStock} kg</td>
+                                <td className="table-info">Cantidad</td>
+                                <td className="table-info">{kgStock} kg</td>
                             </tr>
                             <tr>
-                                <td className="table-warning">Valor estimado</td>
-                                <td className="table-warning">{totalEstenPesos}</td>
+                                <td className="table-info">Valor estimado</td>
+                                <td className="table-info">{totalEstenPesos}</td>
                             </tr>
                             <tr>
                                 <td className="table-dark" colSpan="2">Proveedores</td>
                             </tr>
                             <tr>
-                                <td className="table-warning">Saldo pendiente</td>
-                                <td className="table-warning">{saldoProvPendienteEnPesos}</td>
+                                <td className="table-info">Saldo pendiente</td>
+                                <td className="table-info">{saldoProvPendienteEnPesos}</td>
                             </tr>
                             <tr>
                                 <td className="table-dark" colSpan="2">Clientes</td>
                             </tr>
                             <tr>
-                                <td className="table-warning">Saldo pendiente</td>
-                                <td className="table-warning">{saldoClientePendienteEnPesos}</td>
+                                <td className="table-info">Saldo pendiente</td>
+                                <td className="table-info">{saldoClientePendienteEnPesos}</td>
                             </tr>
                             <tr>
                                 <td className="table-dark" colSpan="2">Faena</td>
                             </tr>
                             <tr>
-                                <td className="table-warning">Saldo pendiente</td>
-                                <td className="table-warning">{saldoFaenaPendienteEnPesos}</td>
+                                <td className="table-info">Saldo pendiente</td>
+                                <td className="table-info">{saldoFaenaPendienteEnPesos}</td>
                             </tr>
                         
                             <tr>

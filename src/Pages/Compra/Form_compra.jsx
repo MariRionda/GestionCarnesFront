@@ -19,7 +19,7 @@ import DateFnsUtils from '@date-io/date-fns';
 let formC = {
     id:'',
     proveedor: '',//
-    fecha: new Date().toLocaleDateString(),//
+    fecha: new Date().toLocaleDateString('en'),//
     lugar: '',//
     n_dte: '',//
     kgv_brutos_totales:0,//
@@ -304,7 +304,7 @@ const Form_Compra = () => {
 const outerTheme = createTheme({
     palette: {
         primary: {
-            main: '#640909'
+            main: '#00585C'
         },
     },
     });
@@ -450,7 +450,7 @@ const outerTheme = createTheme({
                             <div className={style.cardGrupo2}>
                             <table className="table">
                             <thead>
-                            <tr className="table-warning">
+                            <tr className="table-dark">
                                     <td>Categoria</td>
                                     <td>Cantidad</td>
                                     <td>kg</td>
@@ -462,7 +462,7 @@ const outerTheme = createTheme({
 
                                 {grupos?.map(a=>
                                 a.cant!==0?
-                                <tr>
+                                <tr className="table-info">
                                     <td>{a.categoria}</td>
                                     <td>{a.cant}</td>
                                     <td>{a.kg}</td> 

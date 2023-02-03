@@ -16,22 +16,30 @@ code {
 
 
 *{
-  --ColorOne:   rgb(107, 0, 0);
-  --ColorTwo:   rgb(255, 159, 0);
-  --ColorTrhee: rgb(0,0,0);
-  --ColorFour:  rgb(160, 160, 160);
-  --ColorFive:  rgb(255,255,255);
-  --ColorSix:   rgb(0, 153, 255);
-  --ColorSeven: rgb(210, 40, 40);
-  --ColorEight: rgb(255, 207, 131);
+  
+  /* 
+  --Amarillo:  rgb(255, 187, 0);
+  --verde agua:   rgb(7, 170, 151);
+  --verde oscuro:  rgb(0, 88, 92);
+  --azul:   rgb(0, 156, 168);
+  --naranja: rgb(226, 74, 27);
+   */
+  --ColorOne:   rgb(0, 88, 92);
+  --ColorTwo:   rgb(7, 170, 151);
+  --ColorTrhee: rgb(0, 0, 0);
+  --ColorFour:  rgb(255, 187, 0);
+  --ColorFive:  rgb(255, 255, 255);
+  --ColorSix:   rgb(0, 156, 168);
+  --ColorSeven: rgb(255, 0, 0);
+  --ColorEight: rgb(7, 170, 151);
   --ColorOk:    rgb(0, 129, 0);
   --ColorNine:  rgb(238, 83, 83);
 
   
   --ColorFontOne:   rgb(0,0,0);
-  --ColorFontTwo:   rgb(255,255,255);
-  --ColorFontTrhee: rgb(210, 40, 40);
-  --ColorFontFour:  rgb(160, 160, 160);
+  --ColorFontTwo:   rgb(0, 0, 0);
+  --ColorFontTrhee: rgb(255, 0, 0);
+  --ColorFontFour:  rgb(0, 0, 0);
 
 
   --ColorBorderOne: rgb(0,0,0);

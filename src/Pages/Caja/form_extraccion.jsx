@@ -15,7 +15,7 @@ import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
 
 const formPE = {
-    fecha: new Date().toLocaleDateString(),
+    fecha: new Date().toLocaleDateString('en'),
     concepto:'',
     monto: 0,
     formaDePago:'',

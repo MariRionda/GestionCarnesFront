@@ -1,10 +1,12 @@
 import axios from "axios";
 //filter
+//GET_ALL_VENTAS_BY_CLIENTE
 // estado de login
 export const login_state = () => {
     const e = localStorage.getItem("login")
     return ({ type: "LOGIN_STATE", payload: e  });
 };
+//GET_CAJA
 
 export const pagosPDF = (pagos, saldoPagos, cliente) =>{
   let response= pagos.filter((a)=>a.check==true)
@@ -260,7 +262,7 @@ export const getSaldoByCliente = (cliente) => {
         }
       };
 };
-
+//ULTIMAS_FAENAS
 //Traer todas las faenas
 export const getAllFaenas = () => {
     return async (dispatch) => {
@@ -307,24 +309,24 @@ export const getAllFaenasConSaldo = () => {
 };
 
 //Traer todas las faenas
-// export const getFaenasUltimosVeinteDias = () => {
-//   return async (dispatch) => {
-//       try {
-//           const json = await axios.get(`/faenas/all/ultimas`,{
-//             headers: {
-//               'auth-token': `${token}`
-//             }
-//           })
-//           return dispatch({
-//           type: "ULTIMAS_FAENAS",
-//           payload: json.data.data },{
-//           } )
-//       }
-//       catch (error) {
-//           console.log(error);
-//         }
-//       };
-// };
+export const getFaenasUltimosVeinteDias = () => {
+  return async (dispatch) => {
+      try {
+          const json = await axios.get(`/faenas/all/ultimas`,{
+            headers: {
+              'auth-token': `${token}`
+            }
+          })
+          return dispatch({
+          type: "ULTIMAS_FAENAS",
+          payload: json.data.data },{
+          } )
+      }
+      catch (error) {
+          console.log(error);
+        }
+      };
+};
 
 
 //Traer todas las faenas
@@ -1065,6 +1067,7 @@ export const getCaja = () => {
               'auth-token': `${token}`
             }
           });
+          console.log(json.data.data)
           return dispatch({
           type: "GET_CAJA",
           payload: json.data.data})
@@ -2015,4 +2018,4 @@ export const putEditarProveedor = (data_json)=>{
       console.log(err)
     }
   }
-}; 
+};

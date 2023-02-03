@@ -58,7 +58,7 @@ export default function Tabla_Detalle_Faena({reses}){
                             value : e.precio_kg?e.precio_kg:0
                         })
                         return(
-                            <tr key={i} className={"table-warning"}>
+                            <tr key={i} className={"table-info"}>
                                 {e.stock==true?<td><b>{e.correlativo}</b></td>:<td>{e.correlativo}</td>} 
                                 <td>{e.categoria?e.categoria:null}</td> 
                                 <td>{e.kg?e.kg:null}</td> 

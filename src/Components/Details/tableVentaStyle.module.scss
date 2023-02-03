@@ -1,9 +1,9 @@
 .conteiner{
-    background-color:var(--ColorFour);
+    background-color:var(--ColorTwo);
     height: 100%;
 }
 .conteinerDet{
-    background-color:var(--ColorFour);
+    background-color:var(--ColorTwo);
     height: 100%;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .conteinerCaja{
-    background-color:var(--ColorFour);
+    background-color:var(--ColorTwo);
     height: 100%;
 }
 .concepto{
@@ -27,12 +27,12 @@
 }
 @media (max-width: 600px){
     .conteinerCaja{
-        background-color:   var(--ColorFour);
+        background-color:   var(--ColorTwo);
         height: 100%;
         font-size: 10Px;
     }
     .conteinerDet{
-        background-color:   var(--ColorFour);
+        background-color:   var(--ColorTwo);
         height: 100%;
         font-size: 10px;
     }

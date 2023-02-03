@@ -38,43 +38,43 @@ export default function Table_Det_Faena({faena}){
         <div className={tableVentaStyle.conteiner}>
             <table className="table">
                 <tbody>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td>Tropa</td>
                         <td className={tableVentaStyle.tdr}>{faena.tropa}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Fecha</td>
                         <td className={tableVentaStyle.tdr}>{(new Date(faena.fecha*1)).toLocaleDateString('es').replaceAll("/", "-")}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Frigorífico</td>
                         <td className={tableVentaStyle.tdr}>{faena.frigorifico}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Proveedor</td>
                         <td className={tableVentaStyle.tdr}>{faena.proveedor}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >CompraID</td>
                         <td className={tableVentaStyle.tdr}>{faena.compraID}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Cantidad de medias</td>
                         <td className={tableVentaStyle.tdr}>{faena.total_medias}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Total de kg</td>
                         <td className={tableVentaStyle.tdr}>{faena.total_kg}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Costo Faena/kg</td>
                         <td className={tableVentaStyle.tdr}>{costoFaena}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Costo Total</td>
                         <td className={tableVentaStyle.tdr}>{Total}</td>
                     </tr>
-                    <tr className="table-warning">
+                    <tr className="table-info">
                         <td >Saldo</td>
                         <td className={tableVentaStyle.tdr}>{Saldo}</td>
                     </tr>

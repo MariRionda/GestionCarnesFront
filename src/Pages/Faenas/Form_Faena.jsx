@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import {getAllFaenas, getAllProveedores, postNewFaena, setAlert} from "../../Redux/Actions/Actions";
+import {getAllProveedores, postNewFaena, setAlert} from "../../Redux/Actions/Actions";
 import swal from "sweetalert";
 import ShortButton from "../../Components/Buttons/Button_Short/Button_Short";
 import ButtonNew from "../../Components/Buttons/ButtonNew/ButtonNew";
@@ -19,7 +19,7 @@ import CardResesFaena from "../../Components/Cards/CardResesFaena/CardResesFaena
 
 //Form Faena
 const formF = {
-    fecha: new Date().toLocaleDateString(),
+    fecha: new Date().toLocaleDateString('en'),
     frigorifico: '',
     tropa: '',
     proveedor: '',
@@ -44,10 +44,10 @@ const formComF = {
 };
 //var para sumar medias
 var m=0;
-var elHueco=[];
+var Frig2=[];
 
 //Array para select de frigorífico
-const frigorificos = ["Natilla", "El Hueco"]
+const frigorificos = ["Frigorífico1", "Frigorífico2"]
 const categorias = ["Vaquillona", "Novillito", "Vaca", "Toro", "Novillo Pesado"]
 
 
@@ -63,7 +63,7 @@ export const validate = (faena) => {
     if (faena.detalle.length<1) error.detalle = "Falta detalle";
     return error;
 };
-//validaciones de reses frigorifico Natilla
+//validaciones de reses frigorifico Frigorifico1
 export const validate2 = (res) => {
     let error2 = {};
     if (!/^\d*(\.\d{1})?\d{0,1}$/.test(res.kg)) error2.kg = "kg debe ser un número";
@@ -72,7 +72,7 @@ export const validate2 = (res) => {
     return error2;
 };
 
-//validaciones de reses frigorifico El Hueco
+//validaciones de reses frigorifico Frigorifico2
 export const validate3 = (res) => {
     let error3 = {};
     if (!/^\d*(\.\d{1})?\d{0,1}$/.test(res.kg1)) error3.kg1 = "kg1 debe ser un número";
@@ -176,7 +176,7 @@ const Form_Faena = () => {
     const handleSubmitRes = (e) => {   
         e.preventDefault();
         try{
-            if(form.frigorifico==="El Hueco"){
+            if(form.frigorifico==="Frigorífico2"){
                 if(
                     !error3.kg1 && formCF.kg1 &&
                     !error3.kg2 && formCF.kg2                    
@@ -203,7 +203,7 @@ const Form_Faena = () => {
                         setkg_totales(kg_totales+formCF.kg1*1+formCF.kg2*1)
                 }
             }
-            else if(form.frigorifico==="Natilla"){
+            else if(form.frigorifico==="Frigorífico1"){
                 if(
                     !error2.kg && formCF.kg
                 ){
@@ -303,7 +303,7 @@ const Form_Faena = () => {
     const outerTheme = createTheme({
         palette: {
             primary: {
-                main: '#640909'
+                main: '#00585C'
             },
         },
         });
@@ -332,7 +332,7 @@ const Form_Faena = () => {
                         </ThemeProvider>  
                         </MuiPickersUtilsProvider>
                     </div>
-                    <p className={form.fecha!==new Date().toLocaleDateString() ? style.pass : style.danger }>Debe ingresar la fecha</p>
+                    <p className={form.fecha!==new Date().toLocaleDateString('es') ? style.pass : style.danger }>Debe ingresar la fecha</p>
                     <div className={style.formItem}>
                         <h5 className={style.titleForm}>Frigorífico: </h5>
                         <select id="frigorifico" className="selectform" onChange={(e)=> handleSelectFr(e)}>
@@ -371,7 +371,7 @@ const Form_Faena = () => {
                     </div>
                     {/*----------------Carga del detalle---------------------*/}
                     <div className={style.formItem2}>
-                        {form.frigorifico==="El Hueco"?
+                        {form.frigorifico==="Frigorífico2"?
                             <div className={style.inbox}>
                                 <div className={style.item}>
                                     <h5 className={style.titleForm}>Garrón: </h5>
@@ -483,8 +483,8 @@ const Form_Faena = () => {
                                 />
                             )
                         })
-                        :elHueco.length?
-                            elHueco.map((e,i)=>{
+                        :Frig2.length?
+                            Frig2.map((e,i)=>{
                                 return(
                                     <CardReses
                                         key={i}

@@ -1,11 +1,7 @@
 .wallpaper{
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
-    background-image: linear-gradient(180deg,rgb(100, 9, 9) 0, rgb(90, 9, 9) 10%, rgb(80, 9, 9) 20%, rgb(70, 9, 9) 30%, rgb(60, 9, 9) 40%, rgb(50, 9, 9) 50%, rgb(40, 9, 9) 60%, rgb(30, 9, 9) 70%, rgb(20, 9, 9) 80%, rgb(10, 9, 9) 90%, rgb(0, 9, 9) 100%);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     width: 100%;
     min-height: 100%;
 }

@@ -78,14 +78,14 @@ export default function Faenas(){
                     <div className={style.buttonsPagos}>
                         <div className={style.buttonLarge}>
                             <LargeButton
-                                title={"Pagos - Natilla"}
-                                onClick={()=>navigate("/Faenas/DetallePagos/Natilla")}
+                                title={"Pagos - Frigorifico1"}
+                                onClick={()=>navigate("/Faenas/DetallePagos/Frigorifico1")}
                             ></LargeButton>
                         </div>
                         <div className={style.buttonLarge}>
                             <LargeButton
-                                title={"Pagos - El Hueco"}
-                                onClick={()=>navigate("/Faenas/DetallePagos/El Hueco")}
+                                title={"Pagos - Frigorifico2"}
+                                onClick={()=>navigate("/Faenas/DetallePagos/Frigorifico2")}
                             ></LargeButton>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ export default function TableDetRes({venta}){
         <div className={tableVentaStyle.conteinerDet}>
             <table className="table">
                 <thead>
-                    <tr>
+                    <tr className="table-dark">
                         <th>fecha</th>
                         <th>Frigorífico</th>
                         <th>Correlativo</th>
@@ -34,9 +34,9 @@ export default function TableDetRes({venta}){
                 <tbody>
                 {venta.detalle.map((a,j)=>{
                     return(
-                        <tr key={j}  className={"table-warning"}>
+                        <tr key={j}  className={"table-info"}>
                             <td>{(new Date(venta.fecha)).toLocaleDateString('es').replaceAll("/", "-")}</td>
-                            <td>{a.correlativo.includes("-")?"El Hueco":"Natilla"}</td>
+                            <td>{a.correlativo.includes("-")?"Frigorifico2":"Frigorifico1"}</td>
                             <td>{a.correlativo}</td>
                             <td>{a.categoria}</td>
                             <td>{a.total_media}</td>
@@ -52,13 +52,13 @@ export default function TableDetRes({venta}){
             </table>
             <table className="table">
                 <thead>
-                    <tr>
+                    <tr className="table-secondary">
                         <th>Total KG</th>
                         <th>{venta.kg} kg</th>
                     </tr>
                 </thead>
                 <thead>
-                    <tr>
+                    <tr className="table-secondary">
                         <th>Total $</th>
                         <th>{ currencyFormatter({
                                 currency: "USD",

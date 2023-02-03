@@ -50,7 +50,7 @@ export default function DocPDFDetalleV({transaccion,transaccionName, person, nam
             <Page size='A4'>
                 <View>
                     <View style={{width:"100%"}}>
-                        <Image src="https://res.cloudinary.com/dc8ustv0k/image/upload/v1667830724/GestionApp/membrete_primera_opcion_neo3mh.png"/>
+                        <Image src="https://res.cloudinary.com/dk2al2urj/image/upload/v1675458253/MyPortfolio/pdf_membrete_ohrlms.jpg"/>
                     </View>
                     <View style={{margin:"4vh", marginTop:0}}>
                         <View>
@@ -104,7 +104,7 @@ export default function DocPDFDetalleV({transaccion,transaccionName, person, nam
                                                                     })}</Text>
                             </View>
                             <View style={{marginTop:"0.1vh", marginBottom:"0.1vh"}}>
-                                <Text style={{fontSize:"1.3vh", textAlign:"right", fontFamily:"Helvetica", marginTop:"10vh"}}>Carnes Don Alberto</Text>
+                                <Text style={{fontSize:"1.3vh", textAlign:"right", fontFamily:"Helvetica", marginTop:"10vh"}}>Firma</Text>
                             </View>
                         </View>
                         :

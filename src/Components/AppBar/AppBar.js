@@ -39,7 +39,7 @@ const navigate = useNavigate()
   const outerTheme = createTheme({
     palette: {
         primary: {
-            main: '#640909'
+            main: '#00585C'
         },
     },
     });
@@ -62,7 +62,7 @@ const navigate = useNavigate()
             component="div"
             sx={{ display: { xs: '', sm: 'block' } }}
           >
-            Don Alberto Gestión
+            Gestión de Carnes
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: '', md: 'flex' } }}>

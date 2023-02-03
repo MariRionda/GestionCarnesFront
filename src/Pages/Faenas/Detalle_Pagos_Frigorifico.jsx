@@ -76,7 +76,7 @@ export default function Detalle_Pagos_Frigorifico() {
             <NavBar
                 title={`Pagos de ${nombre}`}
             />
-            {pagos[0]=="sin datos" || pagos[0].frigorifico!==nombre?
+            {pagos.length>0 && pagos[0]=="sin datos"?
             <Box sx={{ display: 'flex', justifyContent:'center', alignItems:'center', height:'200px' }}>
                 <CircularProgress />
             </Box>

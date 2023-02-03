@@ -17,7 +17,7 @@ import SubirImagen from "../../Components/SubirImagenes/subirImagenes";
 import emailjs from 'emailjs-com';
 
 const formPC = {
-    fecha: new Date().toLocaleDateString(),
+    fecha: new Date().toLocaleDateString('en'),
     monto: 0,
     formaDePago:'',
     compraID: 0,

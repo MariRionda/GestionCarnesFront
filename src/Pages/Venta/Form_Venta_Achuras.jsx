@@ -16,7 +16,7 @@ import DateFnsUtils from '@date-io/date-fns';
 var formVA = {
     id: '',
     clien:'',
-    fecha: new Date().toLocaleDateString(),
+    fecha: new Date().toLocaleDateString('en'),
     cantidad:0,
     precioUnitario:0,
     total:null,
@@ -132,7 +132,7 @@ const Form_Venta_Achuras = () => {
     const outerTheme = createTheme({
         palette: {
             primary: {
-                main: '#640909'
+                main: '#00585C'
             },
         },
         });

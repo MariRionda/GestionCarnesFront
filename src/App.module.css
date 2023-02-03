@@ -3,7 +3,17 @@
 
 
 }
-
+.bigContainer{
+  display: flex;
+  position: absolute;
+  background-color: black;
+  background-image: linear-gradient(180deg, rgba(255,255,255,1) 49%, rgba(7,170,151,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

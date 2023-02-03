@@ -15,7 +15,7 @@ import DateFnsUtils from '@date-io/date-fns';
 import SubirImagen from "../../Components/SubirImagenes/subirImagenes";
 
 const formPV = {
-    fecha: new Date().toLocaleDateString(),
+    fecha: new Date().toLocaleDateString('en'),
     monto: 0,
     formaDePago:'',
     ventaID:0,

@@ -56,7 +56,7 @@ export default function Tabla_Detalle_Stock_Tropa({reses}){
                             value : e.costo_kg?e.costo_kg:0
                         })
                         return(
-                            <tr key={i} className={"table-warning"}>
+                            <tr key={i} className={"table-info"}>
                                 {e.CuartoT>0?<td><b>{e.correlativo}T</b></td>:e.CuartoD>0?<td><b>{e.correlativo}D</b></td>:<td><b>{e.correlativo}</b></td>} 
                                 <td>{e.categoria?e.categoria:null}</td> 
                                 <td>{e.CuartoT>0?e.CuartoT:e.CuartoD>0?e.CuartoD:e.kg?e.kg:null}</td> 

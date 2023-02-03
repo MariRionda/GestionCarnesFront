@@ -63,7 +63,7 @@ import PdfDetalleVenta from './Pages/Venta/pdfDetalleVenta.jsx';
 import PdfDetalleVentaAch from './Pages/Venta/pdfDetalleVentaAch.jsx';
 import PdfDetalleCompra from './Pages/Compra/pdfDetalleCompra.jsx';
 import Alertas from './Pages/Alertas/Alertas.jsx'
-import './App.css';
+import styles from './App.module.css'
 import DRFullCode from './Pages/DR-FullCode/DR-FullCode.jsx';
 
 
@@ -78,6 +78,7 @@ function App() {
 
 
   return (
+    <div className={styles.bigContainer}>
     <Routes>
     
     <Route exact path="/" element={state_login?<LogOut/>:<Login/>} />
@@ -159,6 +160,8 @@ function App() {
     
 
     </Routes>
+    </div>
+    
   
   );
 }

@@ -66,69 +66,69 @@ export default function TableCompra({compra, comision_total}){
                 <div className={tableComprasStyle.conteiner}>
                         <table className="table">
                         <tbody>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td>id</td>
                                         <td className={tableVentaStyle.tdr}>{compra.id}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Fecha</td>
                                         <td className={tableVentaStyle.tdr}>{(new Date(compra.fecha*1)).toLocaleDateString('es').replaceAll("/", "-")}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Proveedor</td>
                                         <td className={tableVentaStyle.tdr}>{compra.proveedor}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Lugar</td>
                                         <td className={tableVentaStyle.tdr}>{compra.lugar}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >N° DTE</td>
                                         <td className={tableVentaStyle.tdr}>{compra.n_dte}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >kgV Brutos Totales</td>
                                         <td className={tableVentaStyle.tdr}>{compra.kgv_brutos_totales?.toFixed(2)}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >kgV Netos Totales</td>
                                         <td className={tableVentaStyle.tdr}>{compra.kgv_netos_totales?.toFixed(2)}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >kg Carne Totales</td>
                                         <td className={tableVentaStyle.tdr}>{compra.kg_carne_totales?.toFixed(2)}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Cant. Animales</td>
                                         <td className={tableVentaStyle.tdr}>{compra.cant_total}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Precio Venta de Achuras</td>
                                         <td className={tableVentaStyle.tdr}>{precioachuraspesos}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Recupero $/kg</td>
                                         <td className={tableVentaStyle.tdr}>{recupero}</td>
                                 </tr>
                                 {compra.comision_total_pesos?
-                                <tr className="table-warning">                                        
+                                <tr className="table-info">                                        
                                         <td >Comisión</td>
                                         <td className={tableVentaStyle.tdr}>{comision_total_pesos}</td>                 
                                 </tr>
                                 :null}
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Costo VEPs Unit</td>
                                         <td className={tableVentaStyle.tdr}>{costovepsenpesos}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Costo VEPs totales</td>
                                         <td className={tableVentaStyle.tdr}>{costovepstotalenpesos}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Costo Flete</td>
                                         <td className={tableVentaStyle.tdr}>{costofleteenpesos}</td>
                                 </tr>
-                                <tr className="table-warning">
+                                <tr className="table-info">
                                         <td >Costo Total Hacienda</td>
                                         <td className={tableVentaStyle.tdr}>{costohenpesos}</td>
                                 </tr>

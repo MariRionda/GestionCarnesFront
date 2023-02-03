@@ -54,7 +54,7 @@ export default function DocPDFPersonalizado({pagosT, person, name, saldo}){
             <Page size='A4'>
                 <View>
                     <View style={{width:"100%"}}>
-                        <Image src="https://res.cloudinary.com/dc8ustv0k/image/upload/v1667830724/GestionApp/membrete_primera_opcion_neo3mh.png"/>
+                        <Image src="https://res.cloudinary.com/dk2al2urj/image/upload/v1675458253/MyPortfolio/pdf_membrete_ohrlms.jpg"/>
                     </View>
                     <View style={{margin:"4vh", marginTop:0}}>
                         <View>
