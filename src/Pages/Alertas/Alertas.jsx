@@ -29,8 +29,8 @@ const dispatch = useDispatch()
                 <NavBar
                 title="Alertas"
                 />
-                <div className={style.CardConteiner}>
-                {alertRes.length>0?
+                <div className={alertRes[0]=="sin datos"?style.msjContainer:style.CardConteiner}>
+                {alertRes[0]!="sin datos" && alertRes.length>0?
                 alertRes.map((a,i)=>{
                     return(
 
@@ -46,8 +46,12 @@ const dispatch = useDispatch()
                     </div>
                 )
                 }
-                ): 
-                    <Box sx={{ display: 'flex', justifyContent:'center', alignItems:'center', height:'200px' }}>
+                ):
+                alertRes[0]=="sin datos"?
+                <div>
+                    <h4>No hay Reses en stock con más de diez dias</h4>
+                </div>
+                :   <Box sx={{ display: 'flex', justifyContent:'center', alignItems:'center', height:'200px' }}>
                         <CircularProgress />
                     </Box>
                 }    

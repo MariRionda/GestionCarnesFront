@@ -18,7 +18,7 @@ const initialState = {
     login_status:'',
     urlImg: '',
     putSaldo:'',
-    alertRes:[],
+    alertRes:["sin datos"],
     saldoprov:0,
     saldoCliente:0,
     saldoAllCompras:0,

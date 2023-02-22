@@ -71,7 +71,7 @@ const navigate = useNavigate()
               color="inherit"
               onClick={()=>navigate('/Alertas')}
             >
-              <Badge badgeContent={alertRes.length} color="error">
+              <Badge badgeContent={alertRes[0]!="sin datos"?alertRes.length:null} color="error">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
